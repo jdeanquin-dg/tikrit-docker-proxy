@@ -13,7 +13,6 @@ services:
       - backend
     extra_hosts:
       - "host.docker.internal:host-gateway"
-volumes:
 networks:
   backend:
     driver: bridge
