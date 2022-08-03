@@ -16,6 +16,8 @@ services:
     volumes:
       - ./nginx/jenkins.conf:/etc/nginx/conf.d/jenkins.conf:ro
       - ./nginx/develop.conf:/etc/nginx/conf.d/develop.conf:ro
+      - ./nginx/staging.conf:/etc/nginx/conf.d/staging.conf:ro
+      - ./nginx/hotfix.conf:/etc/nginx/conf.d/hotfix.conf:ro
 networks:
   backend:
     driver: bridge
